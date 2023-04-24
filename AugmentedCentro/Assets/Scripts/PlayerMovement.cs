@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        Vector3 velocity = new Vector3(_speed+_vel, 0, 0);
+        Vector3 velocity = new Vector3(_speed*_vel, 0, 0);
         _rb.velocity = velocity;
     }
 
